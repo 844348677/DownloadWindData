@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping package="tdb.domain">  
+  
+    <class name="Ticks" table="TICKS">  
+    
+        <id name="id" type="long" length="20" column="ID">  
+        </id>  
+
+		<property name="chWindCode" type="string" length="20"  column="CHWINDCODE"/>
+		<property name="chCode" type="string" length="20"  column="CHCODE"/>
+		<property name="nDate" type="int" length="10"  column="NDATE"/>
+		<property name="nTime" type="int" length="10"  column="NTIME"/>
+		<property name="nPrice" type="int" length="10"  column="NPRICE"/>
+		<property name="iVolume" type="long" length="20"  column="IVOLUME"/>
+		<property name="iTurover" type="long" length="20"  column="ITUROVER"/>
+		<property name="nMatchItems" type="int" length="10"  column="NMATCHITEMS"/>
+		<property name="nInterest" type="int" length="10"  column="NINTEREST"/>
+		<property name="chTradeFlag" type="string" length="10"  column="CHTRADEFLAG"/>
+		<property name="chBSFlag" type="string" length="10"  column="CHBSFLAG"/>
+		<property name="iAccVolume" type="long" length="20"  column="IACCVOLUME"/>
+		<property name="iAccTurover" type="long" length="20"  column="IACCTUROVER"/>
+		<property name="nHigh" type="int" length="10"  column="NHIGH"/>
+		<property name="nLow" type="int" length="10"  column="NLOW"/>
+		<property name="nOpen" type="int" length="10"  column="NOPEN"/>
+		<property name="nPreClose" type="int" length="10"  column="NPRECLOSE"/>
+		<property name="nSettle" type="int" length="10"  column="NSETTLE"/>
+		<property name="nPosition" type="int" length="10"  column="NPOSITION"/>
+		<property name="nCurDelta" type="int" length="10"  column="NCURDELTA"/>
+		<property name="nPreSettle" type="int" length="10"  column="NPRESETTLE"/>
+		<property name="nPrePosition" type="int" length="10"  column="NPREPOSITION"/>
+		<property name="nAskPrice0" type="int" length="10"  column="NASKPRICE0"/>
+		<property name="nAskPrice1" type="int" length="10"  column="NASKPRICE1"/>
+		<property name="nAskPrice2" type="int" length="10"  column="NASKPRICE2"/>
+		<property name="nAskPrice3" type="int" length="10"  column="NASKPRICE3"/>
+		<property name="nAskPrice4" type="int" length="10"  column="NASKPRICE4"/>
+		<property name="nAskPrice5" type="int" length="10"  column="NASKPRICE5"/>
+		<property name="nAskPrice6" type="int" length="10"  column="NASKPRICE6"/>
+		<property name="nAskPrice7" type="int" length="10"  column="NASKPRICE7"/>
+		<property name="nAskPrice8" type="int" length="10"  column="NASKPRICE8"/>
+		<property name="nAskPrice9" type="int" length="10"  column="NASKPRICE9"/>
+		<property name="nAskVolume0" type="int" length="10"  column="NASKVOLUME0"/>
+		<property name="nAskVolume1" type="int" length="10"  column="NASKVOLUME1"/>
+		<property name="nAskVolume2" type="int" length="10"  column="NASKVOLUME2"/>
+		<property name="nAskVolume3" type="int" length="10"  column="NASKVOLUME3"/>
+		<property name="nAskVolume4" type="int" length="10"  column="NASKVOLUME4"/>
+		<property name="nAskVolume5" type="int" length="10"  column="NASKVOLUME5"/>
+		<property name="nAskVolume6" type="int" length="10"  column="NASKVOLUME6"/>
+		<property name="nAskVolume7" type="int" length="10"  column="NASKVOLUME7"/>
+		<property name="nAskVolume8" type="int" length="10"  column="NASKVOLUME8"/>
+		<property name="nAskVolume9" type="int" length="10"  column="NASKVOLUME9"/>
+		<property name="nBidPrice0" type="int" length="10"  column="NBIDPRICE0"/>
+		<property name="nBidPrice1" type="int" length="10"  column="NBIDPRICE1"/>
+		<property name="nBidPrice2" type="int" length="10"  column="NBIDPRICE2"/>
+		<property name="nBidPrice3" type="int" length="10"  column="NBIDPRICE3"/>
+		<property name="nBidPrice4" type="int" length="10"  column="NBIDPRICE4"/>
+		<property name="nBidPrice5" type="int" length="10"  column="NBIDPRICE5"/>
+		<property name="nBidPrice6" type="int" length="10"  column="NBIDPRICE6"/>
+		<property name="nBidPrice7" type="int" length="10"  column="NBIDPRICE7"/>
+		<property name="nBidPrice8" type="int" length="10"  column="NBIDPRICE8"/>
+		<property name="nBidPrice9" type="int" length="10"  column="NBIDPRICE9"/>
+		<property name="nBidVolume0" type="int" length="10"  column="NBIDVOLUME0"/>
+		<property name="nBidVolume1" type="int" length="10"  column="NBIDVOLUME1"/>
+		<property name="nBidVolume2" type="int" length="10"  column="NBIDVOLUME2"/>
+		<property name="nBidVolume3" type="int" length="10"  column="NBIDVOLUME3"/>
+		<property name="nBidVolume4" type="int" length="10"  column="NBIDVOLUME4"/>
+		<property name="nBidVolume5" type="int" length="10"  column="NBIDVOLUME5"/>
+		<property name="nBidVolume6" type="int" length="10"  column="NBIDVOLUME6"/>
+		<property name="nBidVolume7" type="int" length="10"  column="NBIDVOLUME7"/>
+		<property name="nBidVolume8" type="int" length="10"  column="NBIDVOLUME8"/>
+		<property name="nBidVolume9" type="int" length="10"  column="NBIDVOLUME9"/>
+		<property name="nAskAvPrice" type="int" length="10"  column="NASKAVPRICE"/>
+		<property name="nBidAvPrice" type="int" length="10"  column="NBIDAVPRICE"/>
+		<property name="iTotalAskVolume" type="long" length="20"  column="ITOTALASKVOLUME"/>
+		<property name="iTotalBidVolume" type="long" length="20"  column="ITOTALBIDVOLUME"/>
+		<property name="nIndex" type="int" length="10"  column="NINDEX"/>
+		<property name="nStocks" type="int" length="10"  column="NSTOCKS"/>
+		<property name="nUps" type="int" length="10"  column="NUPS"/>
+		<property name="nDowns" type="int" length="10"  column="NDOWNS"/>
+		<property name="nHoldLines" type="int" length="10"  column="NHOLDLINES"/>
+		<property name="nResv1" type="int" length="10"  column="NRESV1"/>
+		<property name="nResv2" type="int" length="10"  column="NRESV2"/>
+		<property name="nResv3" type="int" length="10"  column="NRESV3"/>
+
+    </class>  
+  
+</hibernate-mapping> 

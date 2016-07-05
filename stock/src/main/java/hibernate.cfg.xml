@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- 数据库连接设置 -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<!-- Student为你的数据库名称 -->
+		<property name="connection.url"> jdbc:oracle:thin:@10.0.0.102:1522:orcl</property>
+		<property name="connection.username">stock</property>
+		<property name="connection.password">stock</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">10</property>
+
+		<!-- SQL方言 -->
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">
+			org.hibernate.cache.NoCacheProvider
+		</property>
+
+		<!-- 显示SQL语句 -->
+		<property name="show_sql">true</property>
+		<!-- 格式化输出SQL语句 -->
+		<property name="format_sql">true</property>
+
+		<!-- validate 加载hibernate时，验证创建数据库表结构 -->
+		<!-- create 每次加载hibernate，重新创建数据库表结构，这就是导致数据库表数据丢失的原因。 -->
+		<!-- create-drop 加载hibernate时创建，退出是删除表结构 -->
+		<!-- update 加载hibernate自动更新数据库结构 -->
+		<property name="hbm2ddl.auto">update</property>
+
+
+		<!-- hibernate与数据库的对象关系映射文件**.hbm.xml -->
+		<!-- 使用annotion注解时，hibernate与数据库对象关系映射表示 -->
+		<!-- 推荐使用annotion注解来表示映射关系 -->
+		<mapping resource="tdb/domain/hibernate/CodeInfo.hbm.xml" />
+		<mapping resource="tdb/domain/hibernate/Ticks.hbm.xml" />
+
+	</session-factory>
+
+</hibernate-configuration>

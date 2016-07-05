@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+        
+<hibernate-mapping package="tdb.domain">  
+  
+    <class name="CodeInfo" table="CODEINFO">  
+    
+        <id name="id" type="long" length="20" column="ID">  
+        </id>  
+
+		<property name="windcode" type="string" length="40"  column="WINDCODE"/>		
+		<property name="code" type="string"  length="40"  column="CODE"/>		
+		<property name="market" type="string" length="40" column="MARKET"/>		
+		<property name="cnname" type="string" length="40" column="CNNAME"/>
+		<property name="enname" type="string" length="40" column="ENNAME"/>
+		<property name="ntype" type="int" length="20" column="NTYPE"/>
+		<property name="marketid" type="long" length="20" column="MARKETID"/>
+
+    </class>  
+  
+</hibernate-mapping> 
